@@ -1,19 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Redirecting...</title>
+<meta charset="UTF-8">
+<title>ElectroStore - D2C</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta http-equiv="refresh" content="0; url=https://smartretailsdemo.store/">
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+}
 
-<script>
-window.location.replace("https://smartretailsdemo.store/");
-</script>
+/* HEADER */
+header {
+    background: #111;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
 
+/* SECTION */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    width: 23%;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.price {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* BLOG */
+.blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blog {
+    width: 30%;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+.blog img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .product, .blog {
+        width: 100%;
+    }
+}
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: #ff6600;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+</style>
 </head>
 
 <body>
 
-<p>Redirecting...</p>
-<a href="https://smartretailsdemo.store/">Click here if not redirected</a>
+<header>
+    <h2>ElectroStore</h2>
+    <nav>Premium Gadgets Direct to You</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Shop Smart. Shop Direct.</h1>
+    <p>Premium products delivered straight to your door.</p>
+    <button>Shop Now</button>
+</section>
+
+<!-- ABOUT -->
+<section>
+    <h2>About Us</h2>
+    <p>
+        We are a Direct-to-Customer brand focused on delivering premium quality products
+        without middlemen. Better prices, better experience.
+    </p>
+</section>
+
+<!-- PRODUCTS -->
+<section>
+
+
+<h2>Featured Electronics</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+<h3>Laptop Pro</h3>
+<p>High-performance laptop for professionals.</p>
+<p class="price">$999</p>
+<button>Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796">
+<h3>Smart Watch</h3>
+<p>Track fitness & notifications on the go.</p>
+<p class="price">$199</p>
+<button>Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<h3>Smartphone X</h3>
+<p>Latest smartphone with powerful features.</p>
+<p class="price">$799</p>
+<button>Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3">
+<h3>Gaming Console</h3>
+<p>Next-gen gaming experience.</p>
+<p class="price">$499</p>
+<button>Buy Now</button>
+</div>
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1580894908361-967195033215">
+<h3>Bluetooth Speaker</h3>
+<p>Portable speaker with deep bass.</p>
+<p class="price">$89</p>
+<button>Buy Now</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1542751371-adc38448a05e">
+<h3>Gaming Headset</h3>
+<p>Crystal-clear sound for gamers.</p>
+<p class="price">$129</p>
+<button>Buy Now</button>
+</div>
+
+</div>
+</section>
+
+<!-- BLOG SECTION -->
+<section>
+<h2>Latest Electronics Blogs</h2>
+
+<div class="blogs">
+
+<div class="blog">
+<img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+<h3>Top 5 Gadgets in 2026</h3>
+<p>Discover the latest must-have electronics that are changing everyday life.</p>
+</div>
+
+<div class="blog">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<h3>How to Choose the Best Laptop</h3>
+<p>Learn what to look for when buying a laptop for work or gaming.</p>
+</div>
+
+<div class="blog">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<h3>Smart Home Devices Guide</h3>
+<p>Upgrade your home with smart automation technology.</p>
+</div>
+
+<div class="blog">
+<img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f">
+<h3>Best Budget Gadgets</h3>
+<p>Top affordable gadgets that deliver amazing performance.</p>
+</div>
+
+<!-- <div class="blog">
+<img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+<h3>Future of Wearable Tech</h3>
+<p>Explore the evolution of smartwatches and wearable devices.</p>
+</div>
+
+<div class="blog">
+<img src="https://images.unsplash.com/photo-1518441902112-fbfe64f39f8d">
+<h3>Headphones Buying Guide</h3>
+<p>Find the perfect headphones for music, gaming, or calls.</p>
+</div> -->
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 ElectroStore | Direct to Customer</p>
+</footer>
+
 </body>
 </html>
