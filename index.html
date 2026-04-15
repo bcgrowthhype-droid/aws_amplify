@@ -1,74 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!DOCTYPE html> <html lang=ru><meta charset=utf-8>
-    <meta name=viewport content="width=device-width, initial-scale=1.0">
-    <title>Buy a safe  | eBuild.page</title>
-     
-    <style>body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f9f9f9;color:#333}header{background:#000;padding:20px;text-align:center}header h1{color:#9977c3;font-size:2.2em;margin:0}header p{color:#fff;margin-top:5px}footer{background:#000;color:#fff;padding:20px;text-align:center}.container{max-width:1100px;margin:0 auto;padding:20px;background:#fff}h1,h2{color:#111}ul{padding-left:20px}.section{margin-top:40px}.contact p{margin:5px 0}.footer-info{font-size:0.9em;color:#ccc}</style>
-    <meta name=referrer content=no-referrer><link rel=canonical href="#"><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"></head>
-    <body>
-    <header>
-    <h1>eBuild.page</h1>
-    <p>Looking for your dream home? You're in the right place!</p>
-    </header>
+<title>UrbanWear | Fashion Brand</title>
 
-    <div class=container>
+<style>
+body{
+  font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+  background:#f4f6f9;
+  color:#333;
+}
 
-    <section class=intro>
-    <h2>Quality residential buildings at affordable prices</h2>
-    <p>We offer a wide range of residential properties—apartments, villas, independent houses, and gated community homes. All properties are built with modern designs and high-quality materials.</p>
-    <p>Our team assists you throughout the process—from selecting the right home to final possession—ensuring a smooth and secure experience.</p>
-    </section>
+/* Header */
+header{
+  background:linear-gradient(90deg,#000,#222);
+  padding:25px;
+  text-align:center;
+}
+header h1{
+  color:#fff;
+  font-size:2.4em;
+  margin:0;
+}
+header p{
+  color:#ccc;
+  margin-top:8px;
+}
 
-    <section class="catalog section">
-    <h2>What you will find in our projects</h2>
-    <ul>
-    <li>Apartments and flats of various sizes</li>
-    <li>Luxury villas and independent houses</li>
-    <li>Gated community residences</li>
-    <li>Modern amenities (gym, pool, parking)</li>
-    <li>Eco-friendly and sustainable designs</li>
-    <li>Ready-to-move and under-construction properties</li>
-    <li>Custom residential projects</li>
-    </ul>
-    </section>
+/* Container */
+.container{
+  max-width:1100px;
+  margin:20px auto;
+  padding:25px;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
 
-    <section class="delivery section">
-    <h2>Projects available across major locations</h2>
-    <p>We offer residential properties in prime locations with excellent connectivity, nearby schools, hospitals, and shopping centers.</p>
-    <p>Detailed information about locations and site visits can be found in the <strong>«Projects»</strong> section on our website.</p>
-    </section>
+/* Sections */
+.section{
+  margin-top:40px;
+}
+h2{
+  color:#111;
+  border-left:4px solid #000;
+  padding-left:10px;
+}
+ul{
+  padding-left:20px;
+}
 
-    <section class="whyus section">
-    <h2>Why choose us</h2>
-    <ul>
-    <li>High-quality construction standards</li>
-    <li>Transparent pricing with no hidden charges</li>
-    <li>Experienced architects and engineers</li>
-    <li>Timely project completion</li>
-    <li>Customer-focused support</li>
-    <li>Flexible payment plans</li>
-    </ul>
-    </section>
+/* Cards */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:#fafafa;
+  padding:15px;
+  border-radius:8px;
+  border:1px solid #eee;
+  text-align:center;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
 
-    <section class="company section">
-    <h2>About the company</h2>
-    <p>Torvest is a trusted real estate development company specializing in residential construction. Since 2017, we have been delivering modern, reliable, and comfortable homes for families and investors.</p>
-    <p>Address: 303-313 Haverhill St</p>
-    <p></p>
-    <p>Director: Khadarovich Andrey Sergeevich</p>
-    </section>
+/* Highlight Section */
+.highlight{
+  background:#000;
+  color:#fff;
+  padding:20px;
+  border-radius:8px;
+}
 
-    <section class="contact section">
-    <h2>Contacts</h2>
-    <p>📞 +1 (718) 656-5495</p>
-    <p>📧 <a href=mailto:£>safeyoursite@gmail.com</a></p>
-    <p><strong>Request a site visit</strong> — and we will contact you shortly!</p>
-    </section>
+/* Testimonials */
+.testimonial{
+  background:#fafafa;
+  padding:15px;
+  border-left:4px solid #000;
+  margin-bottom:15px;
+  border-radius:6px;
+}
 
-    </div>
+/* Footer */
+footer{
+  background:#000;
+  color:#fff;
+  padding:20px;
+  text-align:center;
+  margin-top:40px;
+}
+.footer-info{
+  font-size:0.9em;
+  color:#ccc;
+}
+</style>
 
-    <footer>
-    <p>© 2026 safe.page. All rights reserved.</p>
-    <p class=footer-info>Developed by eBuild</p>
-    </footer>
-    </body>
+</head>
+
+<body>
+
+<header>
+<h1>UrbanWear</h1>
+<p>Wear Confidence. Define Your Style.</p>
+</header>
+
+<div class="container">
+
+<section class="intro">
+<h2>Premium Clothing for Modern Lifestyle</h2>
+<p>UrbanWear is a fashion-forward clothing brand offering stylish, comfortable, and high-quality apparel for everyday life. Our collections are designed to match modern trends while ensuring maximum comfort.</p>
+<p>From casual outfits to statement streetwear, we help you express your personality through fashion.</p>
+</section>
+
+<section class="catalog section">
+<h2>Our Collections</h2>
+<ul>
+<li>Casual wear for daily comfort</li>
+<li>Trendy streetwear and urban fashion</li>
+<li>Formal outfits for special occasions</li>
+<li>Seasonal collections and new arrivals</li>
+<li>Accessories to complete your look</li>
+<li>Eco-friendly fabric options</li>
+</ul>
+</section>
+
+<section class="delivery section">
+<h2>Available Across India</h2>
+<p>We deliver our clothing collections across major cities and towns with fast and secure shipping.</p>
+<p>Explore the latest styles and shop directly from our online store anytime.</p>
+</section>
+
+<section class="whyus section">
+<h2>Why Choose Us</h2>
+<ul>
+<li>Premium quality fabrics</li>
+<li>Affordable pricing</li>
+<li>Latest fashion trends</li>
+<li>Fast delivery</li>
+<li>Easy returns and exchanges</li>
+<li>Customer-first support</li>
+</ul>
+</section>
+
+<!-- NEW SECTION 1 -->
+<section class="section">
+<h2>Featured Products</h2>
+<div class="grid">
+<div class="card">
+<h3>Classic T-Shirt</h3>
+<p>Comfortable cotton tees for everyday wear.</p>
+</div>
+<div class="card">
+<h3>Denim Jackets</h3>
+<p>Stylish and durable for all seasons.</p>
+</div>
+<div class="card">
+<h3>Hoodies</h3>
+<p>Trendy and cozy streetwear essentials.</p>
+</div>
+<div class="card">
+<h3>Sneakers</h3>
+<p>Perfect blend of comfort and fashion.</p>
+</div>
+</div>
+</section>
+
+<!-- NEW SECTION 2 -->
+<section class="section">
+<h2>What Our Customers Say</h2>
+
+<div class="testimonial">
+<p>"Amazing quality and perfect fitting. UrbanWear is my go-to brand!"</p>
+<strong>- Rahul Sharma</strong>
+</div>
+
+<div class="testimonial">
+<p>"Trendy designs and fast delivery. Totally worth it."</p>
+<strong>- Priya Verma</strong>
+</div>
+
+<div class="testimonial">
+<p>"Best streetwear collection I’ve seen at this price."</p>
+<strong>- Aman Gupta</strong>
+</div>
+
+</section>
+
+<section class="company section">
+<h2>About the Brand</h2>
+<p>UrbanWear is a modern clothing brand focused on delivering high-quality fashion since 2020. Our mission is to combine style, comfort, and affordability for everyone.</p>
+<p>We believe fashion is not just about clothes—it’s about confidence and identity.</p>
+</section>
+
+<section class="contact section">
+<h2>Contact Us</h2>
+<p>📞 +91 98765 43210</p>
+<p>📧 support@urbanwear.com</p>
+<p><strong>Shop now and upgrade your style today!</strong></p>
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 UrbanWear. All rights reserved.</p>
+<p class="footer-info">Designed for modern fashion brands</p>
+</footer>
+
+</body>
+</html>
